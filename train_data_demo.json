@@ -1,0 +1,1278 @@
+{
+    "rasa_nlu_data": {
+      "entity_synonyms": [
+        {
+          "value": "information",
+          "synonyms": ["Info", "info", "Information"]
+        },
+        {
+          "value": "TSLA",
+          "synonyms": ["Tesla","tesla","tsla"]
+        },
+        {
+          "value": "IBM",
+          "synonyms": ["IBM","Ibm","ibm"]
+        },
+        {
+          "value": "BA",
+          "synonyms": ["Boeing","boeing","boein"]
+        },
+        {
+          "value": "AIR",
+          "synonyms": ["AIR","air","AAR","AAR CORP","AAR Corp","Airbus","airbus"]
+        },
+        {
+          "value": "LMT",
+          "synonyms": ["Lockheed Martin Corporation","lockheed martin corporation","Lockheed Martin","lockheed martin","Lockheed","lockheed"]
+        },
+        {
+          "value": "AAPL",
+          "synonyms": ["Apple","apple","aapl"]
+        },
+        {
+          "value": "AMZN",
+          "synonyms": ["Amazon","amazon","amzn"]
+        },
+        {
+          "value": "GOOG",
+          "synonyms": ["Google","google","goog"]
+        },
+        {
+          "value": "MSFT",
+          "synonyms": ["Microsoft","microsoft","msft"]
+        }
+      ],
+      "common_examples": [
+        {
+          "text": "what can you do for me",
+          "intent": "function_intro",
+          "entities": []
+        },
+        {
+          "text": "what could you do",
+          "intent": "function_intro",
+          "entities": []
+        },
+        {
+          "text": "ok, what can you do",
+          "intent": "function_intro",
+          "entities": []
+        },
+        {
+          "text": "what information can you provide",
+          "intent": "function_intro",
+          "entities": []
+        },
+        {
+          "text": "what's you function",
+          "intent": "function_intro",
+          "entities": []
+        },
+        {
+          "text": "13102199999",
+          "intent": "phonenumber",
+          "entities": []
+        },
+        {
+          "text": "13269501199",
+          "intent": "phonenumber",
+          "entities": []
+        },
+        {
+          "text": "12345678999",
+          "intent": "phonenumber",
+          "entities": []
+        },
+        {
+          "text": "64758536733",
+          "intent": "phonenumber",
+          "entities": []
+        },
+        {
+          "text": "555-98789",
+          "intent": "phonenumber",
+          "entities": []
+        },
+        {
+          "text": "5559-8789",
+          "intent": "phonenumber",
+          "entities": []
+        },
+        {
+          "text": "12348789",
+          "intent": "phonenumber",
+          "entities": []
+        },
+        {
+          "text": "I want to get current price of tesla",
+          "intent": "current_price",
+          "entities": [
+            {
+              "start":31,
+              "end":36,
+              "value":"TSLA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "I want to know the current price of amazon",
+          "intent": "current_price",
+          "entities": [
+            {
+              "start":36,
+              "end":41,
+              "value":"AMZN",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the current price of amazon",
+          "intent": "current_price",
+          "entities": [
+            {
+              "start":29,
+              "end":35,
+              "value":"AMZN",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the current price of teslaa",
+          "intent": "current_price",
+          "entities": [
+            {
+              "start":29,
+              "end":35,
+              "value":"TSLA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "what about the current price of microsoft",
+          "intent": "current_price",
+          "entities": [
+            {
+              "start":19,
+              "end":28,
+              "value":"MSFT",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "what is the current price of apple",
+          "intent": "current_price",
+          "entities": [
+            {
+              "start":19,
+              "end":25,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the current price of TSLA and AAPL now",
+          "intent": "current_price",
+          "entities": [
+            {
+              "start":29,
+              "end":33,
+              "value":"TSLA",
+              "entity":"company"
+            },
+            {
+              "start":38,
+              "end":42,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the open price of amazon",
+          "intent": "op_cl_price",
+          "entities": [
+            {
+              "start":26,
+              "end":32,
+              "value":"AMZN",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the close price of amazon",
+          "intent": "op_cl_price",
+          "entities": [
+            {
+              "start":27,
+              "end":33,
+              "value":"AMZN",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "what is the open price of apple",
+          "intent": "op_cl_price",
+          "entities": [
+            {
+              "start":26,
+              "end":31,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "what is the close price of apple",
+          "intent": "op_cl_price",
+          "entities": [
+            {
+              "start":27,
+              "end":32,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "what about the open and close price of microsoft",
+          "intent": "op_cl_price",
+          "entities": [
+            {
+              "start":39,
+              "end":48,
+              "value":"MSFT",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "I want to get yesterday price of tesla",
+          "intent": "previous_price",
+          "entities": [
+            {
+              "start":33,
+              "end":38,
+              "value":"TSLA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the yesterday price of amazon",
+          "intent": "previous_price",
+          "entities": [
+            {
+              "start":31,
+              "end":38,
+              "value":"AMZN",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "what about the yesterday price of microsoft",
+          "intent": "previous_price",
+          "entities": [
+            {
+              "start":34,
+              "end":43,
+              "value":"MSFT",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "what is the yesterday price of apple",
+          "intent": "previous_price",
+          "entities": [
+            {
+              "start":31,
+              "end":36,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick chart of apple",
+          "intent": "month_price",
+          "entities": [
+            {
+              "start":21,
+              "end":26,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick abstract chart of apple",
+          "intent": "month_abstract_price",
+          "entities": [
+            {
+              "start":30,
+              "end":35,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick and volume chart of amazon",
+          "intent": "month_volume_price",
+          "entities": [
+            {
+              "start":32,
+              "end":38,
+              "value":"AMZN",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick chart of tesla",
+          "intent": "month_price",
+          "entities": [
+            {
+              "start":21,
+              "end":26,
+              "value":"TSLA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick chart of apple",
+          "intent": "month_price",
+          "entities": [
+            {
+              "start":21,
+              "end":26,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick chart of airbus",
+          "intent": "month_price",
+          "entities": [
+            {
+              "start":21,
+              "end":27,
+              "value":"AIR",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick abstract chart of amazon",
+          "intent": "month_abstract_price",
+          "entities": [
+            {
+              "start":30,
+              "end":36,
+              "value":"AMZN",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick abstract chart of tesla",
+          "intent": "month_abstract_price",
+          "entities": [
+            {
+              "start":30,
+              "end":35,
+              "value":"TSLA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick and volume chart of apple",
+          "intent": "month_volume_price",
+          "entities": [
+            {
+              "start":32,
+              "end":37,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick and volume chart of IBM",
+          "intent": "month_volume_price",
+          "entities": [
+            {
+              "start":32,
+              "end":35,
+              "value":"IBM",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "candlestick and volume chart of XOM",
+          "intent": "month_volume_price",
+          "entities": [
+            {
+              "start":32,
+              "end":35,
+              "value":"XOM",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "get volume of boeing",
+          "intent": "volume",
+          "entities": [
+            {
+              "start":14,
+              "end":20,
+              "value":"BA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "Get volume of airbus",
+          "intent": "volume",
+          "entities": [
+            {
+              "start":14,
+              "end":20,
+              "value":"AIR",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "I want to get volume of boeing",
+          "intent": "volume",
+          "entities": [
+            {
+              "start":24,
+              "end":30,
+              "value":"BA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "I want to get volume of amazon",
+          "intent": "volume",
+          "entities": [
+            {
+              "start":24,
+              "end":30,
+              "value":"AMZN",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "what is the volume of google",
+          "intent": "volume",
+          "entities": [
+            {
+              "start":22,
+              "end":28,
+              "value":"GOOG",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "what is the volume of boeing",
+          "intent": "volume",
+          "entities": [
+            {
+              "start":22,
+              "end":28,
+              "value":"BA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "stock list in the technology",
+          "intent": "stocklist",
+          "entities": [
+            {
+              "start": 18,
+              "end": 28,
+              "value": "technology",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "stock list in the technology sector",
+          "intent": "stocklist",
+          "entities": [
+            {
+              "start": 18,
+              "end": 28,
+              "value": "technology",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "technology stock list",
+          "intent": "stocklist",
+          "entities": [
+            {
+              "start": 0,
+              "end": 10,
+              "value": "technology",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "stock list in the industrials",
+          "intent": "stocklist",
+          "entities": [
+            {
+              "start": 18,
+              "end": 29,
+              "value": "industrials",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "industrials stock list",
+          "intent": "stocklist",
+          "entities": [
+            {
+              "start": 0,
+              "end": 11,
+              "value": "industrials",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "stock list in the industrials sector",
+          "intent": "stocklist",
+          "entities": [
+            {
+              "start": 18,
+              "end": 29,
+              "value": "industrials",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "stock list in the energy",
+          "intent": "stocklist",
+          "entities": [
+            {
+              "start": 18,
+              "end": 24,
+              "value": "energy",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "energy stock list",
+          "intent": "stocklist",
+          "entities": [
+            {
+              "start": 0,
+              "end": 6,
+              "value": "energy",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "stock list in the energy sector",
+          "intent": "stocklist",
+          "entities": [
+            {
+              "start": 18,
+              "end": 24,
+              "value": "energy",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "tell me the quote of AAPL",
+          "intent": "quote",
+          "entities": [
+            {
+              "start": 21,
+              "end": 25,
+              "value": "AAPL",
+              "entity": "company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the quote of XOM",
+          "intent": "quote",
+          "entities": [
+            {
+              "start": 21,
+              "end": 24,
+              "value": "XOM",
+              "entity": "company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the quote of BA",
+          "intent": "quote",
+          "entities": [
+            {
+              "start": 21,
+              "end": 23,
+              "value": "BA",
+              "entity": "company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the quote of LMT",
+          "intent": "quote",
+          "entities": [
+            {
+              "start": 21,
+              "end": 24,
+              "value": "LMT",
+              "entity": "company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the quote of AIR",
+          "intent": "quote",
+          "entities": [
+            {
+              "start": 21,
+              "end": 24,
+              "value": "AIR",
+              "entity": "company"
+            }
+          ]
+        },
+        {
+          "text": "what about the quote of microsoft",
+          "intent": "quote",
+          "entities": [
+            {
+              "start":24,
+              "end":33,
+              "value":"MSFT",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "I want to get the quote of tesla",
+          "intent": "quote",
+          "entities": [
+            {
+              "start":27,
+              "end":32,
+              "value":"TSLA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the quote of amazon",
+          "intent": "quote",
+          "entities": [
+            {
+              "start":21,
+              "end":27,
+              "value":"AMZN",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "what about the quote of lockheed",
+          "intent": "quote",
+          "entities": [
+            {
+              "start":24,
+              "end":32,
+              "value":"LMT",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "I want to get the quote of airbus",
+          "intent": "quote",
+          "entities": [
+            {
+              "start":27,
+              "end":33,
+              "value":"AIR",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the quote of IBM",
+          "intent": "quote",
+          "entities": [
+            {
+              "start":21,
+              "end":24,
+              "value":"IBM",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "ipo", 
+          "intent": "ipo", 
+          "entities": []
+        }, 
+        {
+          "text": "IPO", 
+          "intent": "ipo", 
+          "entities": []
+        },  
+        {
+          "text": "Ipo", 
+          "intent": "ipo", 
+          "entities": []
+        }, 
+        {
+          "text": "IPo", 
+          "intent": "ipo", 
+          "entities": []
+        }, 
+        {
+          "text": "iPO", 
+          "intent": "ipo", 
+          "entities": []
+        },
+        {
+          "text": "IpO", 
+          "intent": "ipo", 
+          "entities": []
+        },  
+        {
+          "text": "iPo", 
+          "intent": "ipo", 
+          "entities": []
+        },
+        {
+          "text": "ipO", 
+          "intent": "ipo", 
+          "entities": []
+        },
+        {
+          "text": "yes", 
+          "intent": "affirm", 
+          "entities": []
+        }, 
+        {
+          "text": "yep", 
+          "intent": "affirm", 
+          "entities": []
+        }, 
+        {
+          "text": "yeah", 
+          "intent": "affirm", 
+          "entities": []
+        }, 
+        {
+          "text": "who are you", 
+          "intent": "greet", 
+          "entities": []
+        }, 
+        {
+          "text": "hey", 
+          "intent": "greet", 
+          "entities": []
+        }, 
+        {
+          "text": "howdy", 
+          "intent": "greet", 
+          "entities": []
+        }, 
+        {
+          "text": "hey there",
+          "intent": "greet", 
+          "entities": []
+        }, 
+        {
+          "text": "hello", 
+          "intent": "greet", 
+          "entities": []
+        }, 
+        {
+          "text": "hi", 
+          "intent": "greet", 
+          "entities": []
+        },
+        {
+          "text": "bye", 
+          "intent": "finish", 
+          "entities": []
+        }, 
+        {
+          "text": "goodbye", 
+          "intent": "finish", 
+          "entities": []
+        }, 
+        {
+          "text": "good bye", 
+          "intent": "finish", 
+          "entities": []
+        }, 
+        {
+          "text": "seeyou", 
+          "intent": "finish", 
+          "entities": []
+        },
+        {
+          "text": "thanks", 
+          "intent": "finish", 
+          "entities": []
+        },
+        {
+          "text": "thankyou", 
+          "intent": "finish", 
+          "entities": []
+        },
+        {
+          "text": "thank", 
+          "intent": "finish", 
+          "entities": []
+        },
+        {
+          "text": "a merit-based share in the technology sector",
+          "intent": "stock_search",
+          "entities": [
+            {
+              "start": 2,
+              "end": 7,
+              "value": "merit",
+              "entity": "share"
+            },
+            {
+              "start": 27,
+              "end": 37,
+              "value": "technology",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "a developmental share in the technology sector",
+          "intent": "stock_search",
+          "entities": [
+            {
+              "start": 2,
+              "end": 15,
+              "value": "developmental",
+              "entity": "share"
+            },
+            {
+              "start": 29,
+              "end": 39,
+              "value": "technology",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "a speculative share in the energy sector",
+          "intent": "stock_search",
+          "entities": [
+            {
+              "start": 2,
+              "end": 13,
+              "value": "speculative",
+              "entity": "share"
+            },
+            {
+              "start": 27,
+              "end": 33,
+              "value": "energy",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "a developmental share in the energy sector",
+          "intent": "stock_search",
+          "entities": [
+            {
+              "start": 2,
+              "end": 15,
+              "value": "developmental",
+              "entity": "share"
+            },
+            {
+              "start": 29,
+              "end": 35,
+              "value": "energy",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "a developmental share in the industrials sector",
+          "intent": "stock_search",
+          "entities": [
+            {
+              "start": 2,
+              "end": 15,
+              "value": "developmental",
+              "entity": "share"
+            },
+            {
+              "start": 29,
+              "end": 40,
+              "value": "industrials",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "a merit-based share in the energy sector",
+          "intent": "stock_search",
+          "entities": [
+            {
+              "start": 2,
+              "end": 7,
+              "value": "merit",
+              "entity": "share"
+            },
+            {
+              "start": 27,
+              "end": 33,
+              "value": "energy",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "in the technology sector",
+          "intent": "sector",
+          "entities": [
+            {
+              "start": 7,
+              "end": 17,
+              "value": "technology",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "in the industrials sector",
+          "intent": "sector",
+          "entities": [
+            {
+              "start": 7,
+              "end": 18,
+              "value": "industrials",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "in the energy sector",
+          "intent": "sector",
+          "entities": [
+            {
+              "start": 7,
+              "end": 13,
+              "value": "energy",
+              "entity": "sector"
+            }
+          ]
+        },
+        {
+          "text": "What about the news of BA",
+          "intent": "news",
+          "entities": [
+            {
+              "start":23,
+              "end":25,
+              "value":"BA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "What about the news of Boeing",
+          "intent": "news",
+          "entities": [
+            {
+              "start":23,
+              "end":29,
+              "value":"BA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "What about the news of Google",
+          "intent": "news",
+          "entities": [
+            {
+              "start":23,
+              "end":29,
+              "value":"GOOG",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "How about the news of AIR",
+          "intent": "news",
+          "entities": [
+            {
+              "start":22,
+              "end":25,
+              "value":"AIR",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "How about the news of Airbus",
+          "intent": "news",
+          "entities": [
+            {
+              "start":22,
+              "end":28,
+              "value":"AIR",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the news of AAPL",
+          "intent": "news",
+          "entities": [
+            {
+              "start":20,
+              "end":24,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the news of XOM",
+          "intent": "news",
+          "entities": [
+            {
+              "start":20,
+              "end":23,
+              "value":"XOM",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the news of LMT",
+          "intent": "news",
+          "entities": [
+            {
+              "start":20,
+              "end":23,
+              "value":"LMT",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "tell me the news of Apple",
+          "intent": "news",
+          "entities": [
+            {
+              "start":20,
+              "end":25,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "What is the news of Apple",
+          "intent": "news",
+          "entities": [
+            {
+              "start":20,
+              "end":25,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "What is the news of Microsoft",
+          "intent": "news",
+          "entities": [
+            {
+              "start":20,
+              "end":29,
+              "value":"MSFT",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "I want to get the financial report of airbus",
+          "intent": "finreport",
+          "entities": [
+            {
+              "start":38,
+              "end":44,
+              "value":"AIR",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "I want to get the financial report of LMT",
+          "intent": "finreport",
+          "entities": [
+            {
+              "start":38,
+              "end":41,
+              "value":"LMT",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "I want to know the financial report of boeing",
+          "intent": "finreport",
+          "entities": [
+            {
+              "start":39,
+              "end":45,
+              "value":"BA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "I want to know the financial report of BA",
+          "intent": "finreport",
+          "entities": [
+            {
+              "start":39,
+              "end":41,
+              "value":"BA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "Give the financial report of boeing to me",
+          "intent": "finreport",
+          "entities": [
+            {
+              "start":29,
+              "end":35,
+              "value":"BA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "Give the financial report of google to me",
+          "intent": "finreport",
+          "entities": [
+            {
+              "start":29,
+              "end":35,
+              "value":"GOOG",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "Send the financial report of boeing to me",
+          "intent": "finreport",
+          "entities": [
+            {
+              "start":29,
+              "end":35,
+              "value":"BA",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "Send the financial report of AAPL to me",
+          "intent": "finreport",
+          "entities": [
+            {
+              "start":29,
+              "end":33,
+              "value":"AAPL",
+              "entity":"company"
+            }
+          ]
+        },
+        {
+          "text": "Please give me some good shares",
+          "intent": "goodstock",
+          "entities": []
+        },
+        {
+          "text": "Please tell me some good shares",
+          "intent": "goodstock",
+          "entities": []
+        },
+        {
+          "text": "I want some good shares",
+          "intent": "goodstock",
+          "entities": []
+        },
+        {
+          "text": "please recommend some good shares for me",
+          "intent": "goodstock",
+          "entities": []
+        },
+        {
+          "text": "Recommend some good shares for me",
+          "intent": "goodstock",
+          "entities": []
+        },
+        {
+          "text": "What good shares can you give to me",
+          "intent": "goodstock",
+          "entities": []
+        },
+        {
+          "text": "What good shares can you recommend for me",
+          "intent": "goodstock",
+          "entities": []
+        }
+        
+      ]
+    }
+  }
