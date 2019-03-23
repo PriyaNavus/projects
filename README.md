@@ -97,9 +97,9 @@ pipline:
 ```
 "spacy_sklearn" can be installed as:<br>
 ```
-pip install rasa_nlu[spacy]
-python -m spacy download en_core_web_md
-python -m spacy link en_core_web_md en
+## pip install rasa_nlu[spacy]
+## python -m spacy download en_core_web_md
+## python -m spacy link en_core_web_md en
 ```
 In this configuration, Intents are classified by `a linear SVM` which gets optimized using a grid search. Named entity recognition and extraction are achieved by the `conditional random field model`. CRFs can be thought of as an undirected Markov chain where the time steps are words and the states are entity classes. Features of the words give probabilities to certain entity classes, as are transitions between neighbouring entity tags: the most likely set of tags is then calculated and returned. In addition, `regular expression` is also be used into intent classifier / entity extractor to simplify classification.<br> 
 ### Train NLU model
