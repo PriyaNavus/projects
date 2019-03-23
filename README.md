@@ -57,6 +57,11 @@ Installation from [development repository](https://github.com/addisonlynch/iexfi
 ## python3 setup.py install
 ```
 ### wxpy
+[wxpy](https://github.com/youfou/wxpy) is an API of social software WeChat, it could be used as an automatic send/receive tool of our chatbot.<br>
+Installation from [github](https://github.com/youfou/wxpy):<br>
+```
+## pip install -U wxpy
+```
 ### Matplotlib
 ## Usage Guide
 ### Create NLU dataset and entity dataset
