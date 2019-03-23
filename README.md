@@ -43,7 +43,7 @@ Import modules of Rasa NLU. These modules help us configure and train the model.
 * Historical data
 * Financial statements
 * Analyst estimates, Price targets
-* Corporate actions
+* Corporate actions<br>
 Installation from [PyPI](https://pypi.org/project/iexfinance/0.3.1/) with pip:<br>
 ```
 ## pip3 install iexfinance
