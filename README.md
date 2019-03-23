@@ -176,14 +176,15 @@ These are some figures produced in our chatbot, you can find these functions in 
 ```
 get_monthly_volume_price("BA")
 ```
-
+![monthvolumeprice](https://github.com/Tknight01/Stockchatbot/blob/master/monthvolumeprice.png)
 ```
 get_sector_perform()
 ```
-
+![sectorperformance](https://github.com/Tknight01/Stockchatbot/blob/master/sectorperformance.png)
 ```
-get_monthly_volume_price("AIR")
+get_monthly_abstract_price("AIR")
 ```
+![monthabstractprice](https://github.com/Tknight01/Stockchatbot/blob/master/monthabstractprice.png)
 ## Authors
 This program was primarily written by Ke Xu at USTC & CAS who was supervised and advised by [Ph.D Fan Zhang](http://www.mit.edu/~f_zhang/) at IBM & MIT.
 ## Contact Information
