@@ -18,7 +18,7 @@ The code of this chatbot can be seen in the `stockchatbot.ipynb`<br>
 ## Video Demo
 This gif demo shows what the Stockchatbot can do.
 .<div align=center><img src="https://github.com/Tknight01/Ke/blob/master/Stockchatbot%20gif%20demo.gif" /></div>
-## Configuration and Installation Guide
+## Installation Guide
 ### Rasa NLU
 We take [Rasa NLU](https://www.rasa.com/) as the framework of natural language chatbot. As a result, Rasa NLU needs to be installed and some modules of Rasa NLU need to be imported.<br>
 Install the package of Rasa NLU.<br>
@@ -78,7 +78,7 @@ We also need some modules of Matplotlib to draw the figure concerning stock info
 ## import mpl_finance as mpf
 ## from matplotlib.pylab import date2num
 ```
-## Usage Guide
+## Configuration and Usage Guide
 ### Create NLU dataset and entity dataset
 ### Define NLU model configuration
 ### Train NLU model
