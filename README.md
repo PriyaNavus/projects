@@ -30,7 +30,7 @@ If you want to use the bleeding edge version of Rasa NLU, you can get it from [g
 ## pip install -r requirements.txt
 ## pip install -e .
 ```
-  Import modules of Rasa NLU. These modules help us configure and train the model.<br>
+Import modules of Rasa NLU. These modules help us configure and train the model.<br>
 ```
 ## from rasa_nlu.training_data import load_data
 ## from rasa_nlu.config import RasaNLUModelConfig
@@ -38,6 +38,23 @@ If you want to use the bleeding edge version of Rasa NLU, you can get it from [g
 ## from rasa_nlu import config
 ```
 ### iexfinance
+[iexfinance](https://pypi.org/project/iexfinance/0.3.1/) is an easy-to-use toolkit to obtain data for stocks:<br>
+* Real-time and delayed quotes
+* Historical data
+* Financial statements
+* Analyst estimates, Price targets
+* Corporate actions
+* ...
+Installation from [PyPI](https://pypi.org/project/iexfinance/0.3.1/) with pip:<br>
+```
+## pip3 install iexfinance
+```
+Installation from [development repository](https://github.com/addisonlynch/iexfinance):<br>
+```
+## git clone https://github.com/addisonlynch/iexfinance.git
+## cd iexfinance
+## python3 setup.py install
+```
 ### wxpy
 ### Matplotlib
 ## Usage Guide
