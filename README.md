@@ -1,5 +1,5 @@
 # Stockchatbot
-This software package is a chatbot that can get real-time stock information. Its framework is based on Rasa_NLU and its pipline is "spacy_sklearn". With pre-defined entities and machine learning, this chatbot can classify intents and extract named entities from natural language concerning stock information query. With slot filling and finite state machine, this chatbot can realize natural language dialogue.<br>
+This software package is a chatbot that can get real-time stock information. Its framework is based on `Rasa_NLU` and its pipline is `"spacy_sklearn"`. With pre-defined entities and machine learning, this chatbot can `classify intents` and `extract named entities` from natural language concerning stock information query. With `slot filling` and `finite state machine`, this chatbot can realize natural language dialogue.<br>
 The code of this chatbot can be seen in the `stockchatbot.ipynb`<br>
 ## Catalog
 * Video Demo
