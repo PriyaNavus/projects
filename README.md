@@ -22,6 +22,12 @@ This gif demo shows what the Stockchatbot can do.
   Install the package of Rasa NLU<br>
   ``## pip install rasa_nlu``<br>
   If you want to use the bleeding edge version of Rasa NLU, you can get it from github:<br>
+.. code:: bash
+     ## git clone https://github.com/RasaHQ/rasa_nlu.git
+  
+  
+  
+  
   ``## git clone https://github.com/RasaHQ/rasa_nlu.git``<br>
   ``## cd rasa_nlu``<br>
   ``##pip install -r requirements.txt``<br>
