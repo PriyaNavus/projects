@@ -80,6 +80,43 @@ We also need some modules of Matplotlib to draw the figure concerning stock info
 ```
 ## Configuration and Usage Guide
 ### Create NLU dataset and entity dataset
+The first thing to use this framework is to define user's messages that this chatbot can understand. You need to define intents and provide different expression of the same intent.This dataset should be in the form of `JSON`. Like these:<br>
+```
+"train_data_demo": {
+    "common_examples": [
+      {
+          "text": "I want to get current price of tesla",
+          "intent": "current_price",
+          "entities": [
+            {
+              "start":31,
+              "end":36,
+              "value":"TSLA",
+              "entity":"company"
+            }
+          ]
+        },
+      {
+        "text": "a developmental share in the technology sector",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 15,
+            "value": "developmental",
+            "entity": "share"
+          },
+          {
+            "start": 29,
+            "end": 39,
+            "value": "technology",
+            "entity": "sector"
+          }
+        ]
+      }
+    ]
+  } 
+```
 ### Define NLU model configuration
 In this project, due to examples amount in the corpus of stock information, we take the "spacy_sklearn" pipline to configure our model. What's more, you need to pre-define the dataset of intents and entities. There are alternative choices provided by [Rasa NLU](https://rasa.com/docs/nlu/choosing_pipeline/).<br>
 The configurations can be seen as:<br>
