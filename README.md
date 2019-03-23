@@ -1,7 +1,6 @@
 # Stockchatbot
 ## Catalog
-
-    * [Video Demo](## Video Demo)
+   * [Video Demo](## Video Demo)
     * [Configuration Guide](## Configuration Guide)
       * [Rasa NLU](### Rasa NLU)
       * [iexfinance](### iexfinance)
