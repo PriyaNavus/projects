@@ -81,6 +81,20 @@ We also need some modules of Matplotlib to draw the figure concerning stock info
 ## Configuration and Usage Guide
 ### Create NLU dataset and entity dataset
 ### Define NLU model configuration
+In this project, due to examples amount in the corpus of stock information, we take the "spacy_sklearn" pipline to configure our model. There are alternative choices provided by [Rasa NLU](https://rasa.com/docs/nlu/choosing_pipeline/). But you need to pre-define the dataset of intents and entities.<br>
+The configurations can be seen as:<br>
+```
+language: "en"
+
+pipline:
+- name: "nlp_spacy"
+- name: "tokenizer_spacy"
+- name: "intent_entity_featurizer_regex"
+- name: "intent_featurizer_spacy"
+- name: "ner_crf"
+- name: "ner_synonyms"
+- name: "intent_classifier_sklearn"
+```
 ### Train NLU model
 ### Call API of iexfinance & wxpy
 ### Try it out
