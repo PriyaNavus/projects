@@ -1,5 +1,6 @@
 # Stockchatbot
 ## Catalog
+
 -[Video Demo](## Video Demo)
 -[Configuration Guide](## Configuration Guide)
   -[Rasa NLU](### Rasa NLU)
@@ -13,6 +14,7 @@
   -[Call API of iexfinance & wxpy](### Call API of iexfinance & wxpy)
   -[Try it out](### Try it out)
 -[Authors](## Authors)
+
 ## Video Demo
 This gif demo shows what the Stockchatbot can do.
 .<div align=center><img src="https://github.com/Tknight01/Ke/blob/master/Stockchatbot%20gif%20demo.gif" /></div>
