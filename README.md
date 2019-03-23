@@ -133,7 +133,7 @@ pipline:
 - name: "ner_synonyms"
 - name: "intent_classifier_sklearn"
 ```
-"spacy_sklearn" can be installed as:<br>
+spaCy can be installed as:<br>
 ```
 ## pip install rasa_nlu[spacy]
 ## python -m spacy download en_core_web_md
