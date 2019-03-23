@@ -117,6 +117,7 @@ The first thing to use this framework is to define user's messages that this cha
     ]
   } 
 ```
+In order to achieve the function of searching for some specific stocks, you also need to build a `SQLite` dataset to hold these stock information. In this project, we create a table in the `SQLite` dataset and saved it as `stock.db`<br>
 ### Define NLU model configuration
 In this project, due to examples amount in the corpus of stock information, we take the "spacy_sklearn" pipline to configure our model. What's more, you need to pre-define the dataset of intents and entities. There are alternative choices provided by [Rasa NLU](https://rasa.com/docs/nlu/choosing_pipeline/).<br>
 The configurations can be seen as:<br>
