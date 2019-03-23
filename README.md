@@ -1,7 +1,7 @@
 # Stockchatbot
 ## Catalog
 * Video Demo
-   * Configuration Guide
+* Configuration Guide
    * Rasa NLU
    * iexfinance
    * wxpy
