@@ -85,6 +85,6 @@ We also need some modules of Matplotlib to draw the figure concerning stock info
 ### Call API of iexfinance & wxpy
 ### Try it out
 ## Authors
-This program was primarily written by Ke Xu at USTC & CAS who was supervised and advised by Ph.D Fan Zhang at IBM & MIT.
+This program was primarily written by Ke Xu at USTC & CAS who was supervised and advised by [Ph.D Fan Zhang](http://www.mit.edu/~f_zhang/) at IBM & MIT.
 ## Contact Information
 Email: xukemse@mail.ustc.edu.cn
