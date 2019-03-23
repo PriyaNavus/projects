@@ -20,7 +20,12 @@ This gif demo shows what the Stockchatbot can do.
 ### Rasa NLU
   We take [Rasa NLU](https://www.rasa.com/) as the framework of natural language chatbot. As a result, Rasa NLU needs to be installed and some modules of Rasa NLU need to be imported.<br>
   Install the package of Rasa NLU<br>
-  ``## pip install rasa_nlu``
+  ``## pip install rasa_nlu``<br>
+  If you want to use the bleeding edge version of Rasa NLU, you can get it from github:
+  ``## git clone https://github.com/RasaHQ/rasa_nlu.git
+    ## cd rasa_nlu
+    ##pip install -r requirements.txt
+    ##pip install -e .``<br>
   Import modules of Rasa NLU<br>
 ### iexfinance
 ### wxpy
