@@ -101,9 +101,9 @@ pip install rasa_nlu[spacy]
 python -m spacy download en_core_web_md
 python -m spacy link en_core_web_md en
 ```
-In this configuration, Intents are classified by `a linear SVM` which gets optimized using a grid search. Named entity recognition and extraction are achieved by the `conditional random field model`. CRFs can be thought of as an undirected Markov chain where the time steps are words and the states are entity classes. Features of the words give probabilities to certain entity classes, as are transitions between neighbouring entity tags: the most likely set of tags is then calculated and returned. In addition, `regular expression` is also be used into intent classifier / entity extractor to simplify classification.<b> 
+In this configuration, Intents are classified by `a linear SVM` which gets optimized using a grid search. Named entity recognition and extraction are achieved by the `conditional random field model`. CRFs can be thought of as an undirected Markov chain where the time steps are words and the states are entity classes. Features of the words give probabilities to certain entity classes, as are transitions between neighbouring entity tags: the most likely set of tags is then calculated and returned. In addition, `regular expression` is also be used into intent classifier / entity extractor to simplify classification.<br> 
 ### Train NLU model
-To train the model, start the `rasa_nlu.train` command, and tell it where to find your configuration and your training data. Then, you need to create a interpreter to classify intent and extract entity.
+To train the model, start the `rasa_nlu.train` command, and tell it where to find your configuration and your training data. Then, you need to create a interpreter to classify intent and extract entity.<br>
 ```
 ## trainer = Trainer(config.load("config_spacy.yml"))
 ## training_data = load_data('train_data_demo.json')
