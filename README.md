@@ -170,8 +170,20 @@ Then find my_friend and define a auto reply function:<br>
 ## def reply_my_friend(msg):
 ##    return 'received: {} ({})'.format(msg.text, msg.type)
 ```
-At last, integrate this program into chatbot framework.<br>
+At last, integrate these programs into chatbot framework.<br>
 ### Try it out
+These are some figures produced in our chatbot, you can find these functions in `stockchatbot.ipynb`.<br>
+```
+get_monthly_volume_price("BA")
+```
+
+```
+get_sector_perform()
+```
+
+```
+get_monthly_volume_price("AIR")
+```
 ## Authors
 This program was primarily written by Ke Xu at USTC & CAS who was supervised and advised by [Ph.D Fan Zhang](http://www.mit.edu/~f_zhang/) at IBM & MIT.
 ## Contact Information
