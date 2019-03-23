@@ -174,15 +174,15 @@ At last, integrate these programs into chatbot framework.<br>
 ### Try it out
 These are some figures produced in our chatbot, you can find these functions in `stockchatbot.ipynb`.<br>
 ```
-get_monthly_volume_price("BA")
+## get_monthly_volume_price("BA")
 ```
 ![monthvolumeprice](https://github.com/Tknight01/Stockchatbot/blob/master/monthvolumeprice.png)
 ```
-get_sector_perform()
+## get_sector_perform()
 ```
 ![sectorperformance](https://github.com/Tknight01/Stockchatbot/blob/master/sectorperformance.png)
 ```
-get_monthly_abstract_price("AIR")
+## get_monthly_abstract_price("AIR")
 ```
 ![monthabstractprice](https://github.com/Tknight01/Stockchatbot/blob/master/monthabstractprice.png)
 ## Authors
