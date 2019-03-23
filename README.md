@@ -1,4 +1,5 @@
 # Stockchatbot
+
 ## Video Demo
 This gif demo shows what the Stockchatbot can do.
 .<div align=center><img src="https://github.com/Tknight01/Ke/blob/master/Stockchatbot%20gif%20demo.gif" /></div>
@@ -8,8 +9,9 @@ This gif demo shows what the Stockchatbot can do.
 ### wxpy
 ### Matplotlib
 ## Usage Guide
-### Define a customized dataset
-### Matplotlib
-### Matplotlib
-### Matplotlib
+### Create NLU dataset and entity dataset
+### Define NLU model configuration
+### Train NLU model
+### Call API of iexfinance & wxpy
+### Try it out
 ## Authors
