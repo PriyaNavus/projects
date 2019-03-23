@@ -185,7 +185,7 @@ These are some figures produced in our chatbot, you can find these functions in 
 ## get_monthly_abstract_price("AIR")
 ```
 ![monthabstractprice](https://github.com/Tknight01/Stockchatbot/blob/master/monthabstractprice.png)
-The final result can be seen in the `Stockchatbot video demo`.<br>
+The final result can be seen in the `Stockchatbot video demo. mp4`.<br>
 ## Authors
 This program was primarily written by Ke Xu at USTC & CAS who was supervised and advised by [Ph.D Fan Zhang](http://www.mit.edu/~f_zhang/) at IBM & MIT.
 ## Contact Information
