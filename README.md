@@ -31,6 +31,12 @@ If you want to use the bleeding edge version of Rasa NLU, you can get it from [g
 ## pip install -e .
 ```
   Import modules of Rasa NLU.<br>
+```
+## from rasa_nlu.training_data import load_data
+## from rasa_nlu.config import RasaNLUModelConfig
+## from rasa_nlu.model import Trainer
+## from rasa_nlu import config
+```
 ### iexfinance
 ### wxpy
 ### Matplotlib
