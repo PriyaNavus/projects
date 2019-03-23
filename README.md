@@ -150,6 +150,27 @@ To train the model, start the `rasa_nlu.train` command, and tell it where to fin
 ## interpreter.parse(message)['entities']['value']
 ```  
 ### Call API of iexfinance & wxpy
+The [iex-examples](https://github.com/addisonlynch/iex-examples) repository provides a number of detailed examples of iexfinance usage. We just show one of these:<br>
+To obtain real-time quotes for one or more symbols, use the `get_price` method of the `Stock` object:<br>
+```
+## from iexfinance.stocks import Stock
+## tsla = Stock('TSLA')
+## tsla.get_price()
+```
+In order to make our chatbot more attractive, we deploy it into WeChat by [wxpy](https://github.com/youfou/wxpy).<br>
+First, you need to import `wxpy` and initialize a Bot():<br>
+```
+## from wxpy import *
+## bot = Bot()
+```
+Then find my_friend and define a auto reply function:<br>
+```
+## my_friend = bot.friends().search('name', sex='', city='')[0]
+## @bot.register(my_friend)
+## def reply_my_friend(msg):
+##    return 'received: {} ({})'.format(msg.text, msg.type)
+```
+At last, integrate this program into chatbot framework.<br>
 ### Try it out
 ## Authors
 This program was primarily written by Ke Xu at USTC & CAS who was supervised and advised by [Ph.D Fan Zhang](http://www.mit.edu/~f_zhang/) at IBM & MIT.
