@@ -68,7 +68,7 @@ Installation from [Matplotlib](https://matplotlib.org/):
 ```
 ## pip install -U matplotlib
 ```
-we also need some modules of matplotlib to draw the figure concerning stock information.
+We also need some modules of Matplotlib to draw the figure concerning stock information.
 ```
 ## import matplotlib as mpl
 ## import matplotlib.pyplot as plt
