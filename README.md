@@ -63,6 +63,19 @@ Installation from [github](https://github.com/youfou/wxpy):<br>
 ## pip install -U wxpy
 ```
 ### Matplotlib
+[Matplotlib](https://matplotlib.org/) is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. You can generate plots, histograms, power spectra, bar charts, errorcharts, scatterplots, etc., with just a few lines of code.<br>
+Installation from [Matplotlib](https://matplotlib.org/):
+```
+## pip install -U matplotlib
+```
+we also need some modules of matplotlib to draw the figure concerning stock information.
+```
+## import matplotlib as mpl
+## import matplotlib.pyplot as plt
+## import mpl_finance
+## import mpl_finance as mpf
+## from matplotlib.pylab import date2num
+```
 ## Usage Guide
 ### Create NLU dataset and entity dataset
 ### Define NLU model configuration
